@@ -1,0 +1,53 @@
+body {
+    background-image: linear-gradient(black, rgb(53, 106, 167), rgb(169, 204, 176));
+    font:15px/1.5 Arial, Helvetica,sans-serif;
+	padding: 0px;
+	background-color:#f4f3f3;
+}
+
+.card:hover{
+    box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.container{
+    grid-template-rows: repeat(5, 350px);
+}
+
+.input_field{
+    padding: 14.5%;
+    margin-top: -10%;
+    margin-left: -3%;
+}
+
+.description {
+    margin-top: -50%;
+    padding: 10%;
+}
+
+#name1, #name2 {
+    color: #ececec;
+}
+
+input.playlist_input, #number_of_records{
+    padding:0.46em 1.6em;
+    border-radius: 0.5em;
+    margin:0 0.2em 0.2em 0;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    /* font-weight:300; */
+    color:#000000;
+    text-align:center;
+    transition: all 0.15s;
+}
+
+input.input_button {
+    border-radius: 5px;
+    border: 0.1em solid; 
+    background-color: #04AA6D!important;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+    color: #ececec;
+    border-color: #04AA6D;
+    padding:0.46em 1.6em;
+}

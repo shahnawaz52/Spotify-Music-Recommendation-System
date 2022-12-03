@@ -1,0 +1,23 @@
+{% extends "home.html" %}
+{% block results %}
+<div class="">
+    <h2 style='color: #ececec'>Results</h2>
+    <div class="container">
+        <div class="row">
+        {% for song in songs %}
+        <div class="card col-md-4 mx-4 my-4" style="width: 18rem;">
+            <img class="card-img-top" src="{{song[2]}}" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">{{song[0]}}</h5>
+                <p class="card-text"><b>Album Name - </b>{{song[3]}}</p>
+                <a href="{{song[1]}}" class="btn btn-secondary songnamebtn mw-100" style="background-color:#1DB954; margin-left:3rem;" target="_blank">
+                    <img src="https://research.atspotify.com/wp-content/themes/spotify/images/logo-2.svg" height="40px" width="100px" alt="Spotify"/>
+                </a>
+            </div>
+        </div>
+        
+        {% endfor %}   
+        </div>
+    </div> 
+</div>
+{% endblock %}
